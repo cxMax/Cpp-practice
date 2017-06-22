@@ -1,0 +1,36 @@
+﻿  Sales_item.cpp
+  FirstCppProject.cpp
+e:\cpp_code\firstcppproject\firstcppproject\firstcppproject.cpp(33): error C2679: 二进制“>>”: 没有找到接受“Sales_item”类型的右操作数的运算符(或没有可接受的转换)
+  e:\microsoft visul studio\vc\tools\msvc\14.10.25017\include\istream(475): note: 可能是“std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(std::basic_streambuf<char,std::char_traits<char>> *)”
+  e:\microsoft visul studio\vc\tools\msvc\14.10.25017\include\istream(456): note: 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(void *&)”
+  e:\microsoft visul studio\vc\tools\msvc\14.10.25017\include\istream(438): note: 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(long double &)”
+  e:\microsoft visul studio\vc\tools\msvc\14.10.25017\include\istream(420): note: 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(double &)”
+  e:\microsoft visul studio\vc\tools\msvc\14.10.25017\include\istream(401): note: 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(float &)”
+  e:\microsoft visul studio\vc\tools\msvc\14.10.25017\include\istream(383): note: 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(unsigned __int64 &)”
+  e:\microsoft visul studio\vc\tools\msvc\14.10.25017\include\istream(364): note: 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(__int64 &)”
+  e:\microsoft visul studio\vc\tools\msvc\14.10.25017\include\istream(345): note: 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(unsigned long &)”
+  e:\microsoft visul studio\vc\tools\msvc\14.10.25017\include\istream(327): note: 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(long &)”
+  e:\microsoft visul studio\vc\tools\msvc\14.10.25017\include\istream(309): note: 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(unsigned int &)”
+  e:\microsoft visul studio\vc\tools\msvc\14.10.25017\include\istream(283): note: 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(int &)”
+  e:\microsoft visul studio\vc\tools\msvc\14.10.25017\include\istream(264): note: 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(unsigned short &)”
+  e:\microsoft visul studio\vc\tools\msvc\14.10.25017\include\istream(229): note: 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(short &)”
+  e:\microsoft visul studio\vc\tools\msvc\14.10.25017\include\istream(210): note: 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(bool &)”
+  e:\microsoft visul studio\vc\tools\msvc\14.10.25017\include\istream(204): note: 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(std::ios_base &(__cdecl *)(std::ios_base &))”
+  e:\microsoft visul studio\vc\tools\msvc\14.10.25017\include\istream(198): note: 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))”
+  e:\microsoft visul studio\vc\tools\msvc\14.10.25017\include\istream(193): note: 或    “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(std::basic_istream<char,std::char_traits<char>> &(__cdecl *)(std::basic_istream<char,std::char_traits<char>> &))”
+  e:\microsoft visul studio\vc\tools\msvc\14.10.25017\include\istream(1092): note: 或    “std::basic_istream<char,std::char_traits<char>> &std::operator >><char,std::char_traits<char>,Sales_item&>(std::basic_istream<char,std::char_traits<char>> &&,_Ty)”
+          with
+          [
+              _Ty=Sales_item &
+          ]
+  e:\microsoft visul studio\vc\tools\msvc\14.10.25017\include\istream(1082): note: 或    “std::basic_istream<char,std::char_traits<char>> &std::operator >><std::char_traits<char>>(std::basic_istream<char,std::char_traits<char>> &,unsigned char &)”
+  e:\microsoft visul studio\vc\tools\msvc\14.10.25017\include\istream(1075): note: 或    “std::basic_istream<char,std::char_traits<char>> &std::operator >><std::char_traits<char>>(std::basic_istream<char,std::char_traits<char>> &,unsigned char *)”
+  e:\microsoft visul studio\vc\tools\msvc\14.10.25017\include\istream(1068): note: 或    “std::basic_istream<char,std::char_traits<char>> &std::operator >><std::char_traits<char>>(std::basic_istream<char,std::char_traits<char>> &,signed char &)”
+  e:\microsoft visul studio\vc\tools\msvc\14.10.25017\include\istream(1061): note: 或    “std::basic_istream<char,std::char_traits<char>> &std::operator >><std::char_traits<char>>(std::basic_istream<char,std::char_traits<char>> &,signed char *)”
+  e:\cpp_code\firstcppproject\firstcppproject\firstcppproject.cpp(33): note: 尝试匹配参数列表“(std::istream, Sales_item)”时
+e:\cpp_code\firstcppproject\firstcppproject\firstcppproject.cpp(34): error C2783: “std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const char *)”: 未能为“_Elem”推导 模板 参数
+  e:\microsoft visul studio\vc\tools\msvc\14.10.25017\include\ostream(684): note: 参见“std::operator <<”的声明
+e:\cpp_code\firstcppproject\firstcppproject\firstcppproject.cpp(34): error C2783: “std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const char *)”: 未能为“_Traits”推导 模板 参数
+  e:\microsoft visul studio\vc\tools\msvc\14.10.25017\include\ostream(684): note: 参见“std::operator <<”的声明
+e:\cpp_code\firstcppproject\firstcppproject\firstcppproject.cpp(34): error C2677: 二进制“<<”: 没有找到接受“Sales_item”类型的全局运算符(或没有可接受的转换)
+  正在生成代码...
