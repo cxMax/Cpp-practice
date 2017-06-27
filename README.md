@@ -5,6 +5,7 @@
 
 ## blog is here
 [C++学习摘要记录(1)](http://blog.csdn.net/qq_28690547/article/details/73612535)
+[C++学习摘要记录(2)](http://blog.csdn.net/qq_28690547/article/details/73825297)
 
 ## License
    Copyright (C) 2017 cxMax

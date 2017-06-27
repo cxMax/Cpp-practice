@@ -3,7 +3,7 @@
 
 #include "stdafx.h"
 #include <iostream>  
-#include "Sales_item.h"
+#include "Sales_data.h"
 #include <string>
 #include <cstdlib>
 using namespace std;
@@ -72,6 +72,86 @@ void testConst() {
 	const int ci = 1024;
 	const int &ri = ci; // 引用及其对应的对象都是常量
 }
+
+void testConst1() {
+	const double pi = 3.15;
+	const double *ptr = &pi;  //指针指向一个const常量, 自身也必须是const
+}
+
+void testConst() {
+	int errNum = 9;
+	int *const curErr = &errNum;  // curErr 将一直指向 errNum
+	const double pi = 3.14;
+	const double *const pip = &pi; // pip是一个一直指向常量对象的常量指针
+}
+
+void testConst() {
+	int i = 0;
+	int *const pl = &i; // 这是一个顶层const , 不能改变p1的值
+	const int ci = 42; // 这是一个顶层const , 不能改变ci的值
+	const int *p2 = &ci; // 这是一个底层const , 允许改变p2的值
+}
+
+void testConst() {
+	const int max_files = 20; //常量表达式
+	const int limit = max_files + 1; //常量表达式
+}
+
+void testConst() {
+	constexpr int mf = 20;
+	constexpr int limit = mf + 1;
+}
+
+void testConst() {
+	const int *p = nullptr; //p是一个指向整型常量的指针
+	constexpr int *q = nullptr; //q是一个指向证书的常量指针
+}
+
+void testAlias() {
+	typedef double wages; //wages 是 double 的同义词
+	typedef wages bas, *p; // bas 是 double 的同义词 , p 是 double* 的同义词
+	using SI = Sales_data;  // SI 是 Sales_item 的同义词
+
+	typedef char *pstring;
+	const pstring cstr = 0; //cstr是指向char的常量指针
+	const pstring *ps; // ps是一个指针 , 它的对象是指向char的常量指针
+}
+
+void testAuto() {
+	int i = 2; 
+	float p = 1.3;
+	auto sum = i + p; // auto 自动推断出 i + p 的类型
+
+	const int c1 = i, &cr = c1;
+	auto b = c1; // b 是一个整数
+	auto c = cr; // c 是一个整数
+	auto d = &i; // d 是一个整型指针
+	auto e = &c1; // e 是一个指向整数常量的指针
+}
+
+void testDecltype() {
+	const int ci = 0, &cj = ci;
+	decltype(ci) x = 0; // x 的类型是 const int
+	decltype(cj) y = x; // y 的类型是 const int& , y 绑定到变量x
+
+	int i = 42, *p = &i, &r = i;
+	decltype(r + 0) b; // b代表一个 int类型
+	decltype(i) e; // e是一个 int
+}
+
+struct Sales_data {
+	std::string bookNo;
+	unsigned units_sold = 0;
+	double revenue = 0.0;
+};
+
+void testSales_data() {
+	Sales_data data1, datda2;
+	double price = 0;
+	cin >> data1.bookNo >> data1.units_sold >> price;
+	data1.revenue = data1.units_sold * price;
+}
+
 
 int main()
 {
