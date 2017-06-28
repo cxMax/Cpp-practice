@@ -6,7 +6,9 @@
 #include "Sales_data.h"
 #include <string>
 #include <cstdlib>
+#include <vector>
 using namespace std;
+using std::cin;
 
 bool isTrue;
 char squence;
@@ -150,6 +152,49 @@ void testSales_data() {
 	double price = 0;
 	cin >> data1.bookNo >> data1.units_sold >> price;
 	data1.revenue = data1.units_sold * price;
+}
+
+void testinitializeString() {
+	string s1;
+	string s2 = s1;
+	string s3 = "hiya";
+	string s4(10, 'c'); // s4 的内容是 cccccccccc
+	string s5 = "hiya";
+	string s6("hiya"); //直接初始化
+}
+
+void testReadString() {
+	string word;
+	while (cin >> word) {
+		cout << word << endl
+	}
+
+	string line;
+	while (getline(cin, line)) {
+		if (!line.empty) {
+			cout << line << endl
+		}
+	}
+}
+
+void testInitializeVector() {
+	vector<string> v1{ "a","b","c","d","e" };
+	vector<string> v1(10, "hi"); // 列表里面10个 "hi"
+}
+
+void testIterator() {
+	string s("hello world");
+	for (auto it = s.begin; it != s.end && !isspace(*it); ++it) {
+		//do something
+	}
+}
+
+void testIterator() {
+	vector<int>::iterator it; //可读写vector里面的元素
+	vector<int>::const_iterator it1; //只能读
+
+	string::iterator it2; //可读写string中的字符
+	string::const_iterator it3; //只能读
 }
 
 
