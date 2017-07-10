@@ -13,6 +13,21 @@ class Sales_data
 #endif // !SALES_DATA_H
 
 
+	Sales_data add() {
+		return Sales_data();
+	}
+
+	class Screen
+	{
+	public:
+		typedef std::string::size_type pos;
+	private:
+		pos cursor = 0;
+		pos height = 0 , width = 0;
+		std::string contents;
+	};
+
+
 public:
 	Sales_data();
 	~Sales_data();

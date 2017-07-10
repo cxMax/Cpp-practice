@@ -7,6 +7,8 @@
 #include <string>
 #include <cstdlib>
 #include <vector>
+#include<list>
+#include <memory>
 using namespace std;
 using std::cin;
 
@@ -195,6 +197,41 @@ void testIterator() {
 
 	string::iterator it2; //可读写string中的字符
 	string::const_iterator it3; //只能读
+}
+
+void testExpression() {
+	string s1 = "a string", *p = &s1;
+	auto n = s1.size();
+	n = (*p).size();
+	n = p->size();
+}
+
+void testSharedPtr() {
+	shared_ptr<string> p1; //指向string
+	shared_ptr<list<int>> p2; //指向<list> String
+	shared_ptr<int> p3 = make_shared<int>(42); //指向42
+	shared_ptr<string> p4 = make_shared<string>(10, "9"); //指向10个9的string
+	shared_ptr<int> p5 = make_shared<int>(); // 指向0
+	auto p6 = make_shared<vector<string>>(); // p6指向一个动态分配的空vector<string>
+
+	auto p = make_shared<int>(42); // p指向的对象只有一个引用者
+	auto q(p); // p 和 q指向相同对象 , 此对象有两个引用者
+}
+
+void testManageMemory() {
+	int *pi = new int; //pi 指向一个未初始化\动态分配的无名对象
+	const int *pci = new const int(1024); //分配并初始化一个const int
+	const string *pcs = new const string; // 初始化一个空的string
+
+	int i, *pi1 = &i, *pi2 = nullptr;
+	double *pd = new double(32), *pd2 = pd;
+	delete pd;  // 操作delete 必须为已初始化的对象
+	delete pd2;
+	const int *pci = new const int(1024);
+	delete pci;
+	pci = nullptr; //delete后, 须将nullptr赋予指针, 避免空悬指针
+
+	shared_ptr<int> p2(new int(42)); //初始化shared_ptr
 }
 
 
