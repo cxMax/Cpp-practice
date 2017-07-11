@@ -234,6 +234,17 @@ void testManageMemory() {
 	shared_ptr<int> p2(new int(42)); //初始化shared_ptr
 }
 
+void testUniquePtr() {
+	unique_ptr<double> p1; // 指向一个double的unique_ptr
+	unique_ptr<int> p2(new int(42)); // p2指向一个值为42的int
+
+	unique_ptr<string> p3(new string("haha"));
+	unique_ptr<string> p4(p3.release); // release 将p3置为空 ,将所有权从p3转移给p4
+
+	unique_ptr<string> p5(new string("haha"));
+	p4.reset(p3.release); // 将所有权从p5转移给p4 , reset 同时释放了p4的资源
+}
+
 
 int main()
 {
